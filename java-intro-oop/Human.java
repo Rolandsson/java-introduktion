@@ -24,7 +24,14 @@ public class Human {
         return this.name + "\n\t" + this.address + "\n\t\t" + this.phone;
     }
 
-    public void show() {
+    // Vi har inte gått igenom detta men tekniskt så kan denna metod ersättas med en override av toString.
+    // Fördelen är då att du kan skriva "System.out.println(human)" istället för "human.show()"
+    public void show() { 
         System.out.println(this.name + "\n\t" + this.address + "\n\t\t" + this.phone);
+    }
+    
+    @Override
+    public String toString() {
+        return this.name + "\n\t" + this.address + "\n\t\t" + this.phone
     }
 }
