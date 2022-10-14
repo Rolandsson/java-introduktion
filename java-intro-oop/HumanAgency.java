@@ -2,7 +2,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class HumanAgency {
-    List<Human> temp;
+    List<Human> temp; // Ifall du ser denna som en temporärlista som hanteras av human agency så bör den skickas som en parameter till respektive metod
+    
+    /**
+    En alternativ lösning är att hantera HumanAgency som en repository, dvs. den har en instans av en lista med humans och innehåll CRUD metoder.
+    */
+    
     public HumanAgency(List<Human> humans) {
         this.temp = humans;
 
